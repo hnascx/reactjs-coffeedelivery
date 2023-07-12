@@ -25,7 +25,9 @@ export const defaultTheme = {
 
   /* Typography */
 
-  /* Baloo 2 */
+  /* 
+  
+  Baloo 2 
 
   'title-xl':
     'font-family: "Baloo 2", sans-serif; font-size: 3rem; line-height: 1.3; font-weight: 800;',
@@ -38,7 +40,11 @@ export const defaultTheme = {
   'title-xs':
     'font-family: "Baloo 2", sans-serif; font-size: 1.125rem; line-height: 1.3; font-weight: 700;',
 
-  /* Roboto */
+  */
+
+  /* 
+  
+  Roboto 
 
   'text-l-regular':
     'font-family: "Roboto", sans-serif; font-size: 1.5rem; line-height: 1.3; font-weight: 400;',
@@ -57,4 +63,6 @@ export const defaultTheme = {
     'font-family: "Roboto", sans-serif; font-size: 0.875rem; line-height: 1.6; font-weight: 700',
   'button-m':
     'font-family: "Roboto", sans-serif; font-size: 0.750rem; line-height: 1.6; font-weight: 400',
+
+  */
 }
