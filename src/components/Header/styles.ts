@@ -4,6 +4,9 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 70rem;
+  margin: 0 10rem;
 `
 export const LocationAndCartContent = styled.span`
   display: flex;
