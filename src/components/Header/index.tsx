@@ -1,14 +1,13 @@
-import { HeaderContainer, LocationAndCartContent } from './styles'
-import logoCoffee from '../../assets/coffee-logo.png'
-import mapPinFill from '../../assets/map-pin-fill.svg'
-import shoppingCartFill from '../../assets/shopping-cart-fill.svg'
 import { NavLink } from 'react-router-dom'
+
+import { HeaderContainer, LocationAndCartContent } from './styles'
+import { coffeeLogo, mapPinFill, shoppingCartFill } from '../../assets'
 
 export function Header() {
   return (
     <HeaderContainer>
       <NavLink to="/" title="Home">
-        <img src={logoCoffee} alt="" />
+        <img src={coffeeLogo} alt="" />
       </NavLink>
       <LocationAndCartContent>
         <span>
