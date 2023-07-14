@@ -52,27 +52,33 @@ export const BannerContainerTitle = styled.section`
 `
 
 export const BannerContainerSubtitle = styled.section`
-  /* justify-content: space-between; */
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 35.5rem;
 
   padding: 4.125rem 0;
+
+  gap: 1.25rem;
 
   div {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 
     gap: 0.75rem;
 
+    &:last-child {
+      margin-right: 0.75rem;
+    }
+
     img {
-      display: inline-block;
+      display: flex;
       align-items: center;
       justify-content: center;
 
       padding: 0.5rem;
 
-      background: ${(props) => props.theme['yellow-dark']};
       border-radius: 50%;
     }
 

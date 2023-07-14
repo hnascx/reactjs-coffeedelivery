@@ -1,4 +1,10 @@
-import { coffeeDeliveryBannerImage, shoppingCartIconBanner } from '../../assets'
+import {
+  boxIconBanner,
+  coffeeDeliveryBannerImage,
+  coffeeIconBanner,
+  shoppingCartIconBanner,
+  timerIconBanner,
+} from '../../assets'
 import {
   BannerContainerBackground,
   BannerContainer,
@@ -24,12 +30,40 @@ export function Home() {
           </BannerContainerTitle>
           <BannerContainerSubtitle>
             <div>
-              <img src={shoppingCartIconBanner} width={32} alt="" />
+              <img
+                src={shoppingCartIconBanner}
+                width={32}
+                style={{ backgroundColor: `#C47F17` }}
+                alt=""
+              />
               <span>Compra simples e segura</span>
             </div>
             <div>
-              <img src={shoppingCartIconBanner} width={32} alt="" />
-              <span>Compra simples e segura</span>
+              <img
+                src={boxIconBanner}
+                width={32}
+                style={{ backgroundColor: `#574F4D` }}
+                alt=""
+              />
+              <span>Embalagem mantém o café intacto</span>
+            </div>
+            <div>
+              <img
+                src={timerIconBanner}
+                width={32}
+                style={{ backgroundColor: `#DBAC2C` }}
+                alt=""
+              />
+              <span>Entrega rápida e rastreada</span>
+            </div>
+            <div>
+              <img
+                src={coffeeIconBanner}
+                width={32}
+                style={{ backgroundColor: `#8047F8` }}
+                alt=""
+              />
+              <span>O café chega fresquinho até você</span>
             </div>
           </BannerContainerSubtitle>
         </BannerContainerTexts>
