@@ -7,6 +7,7 @@ import shoppingCartFill from './shopping-cart-fill.svg'
 import shoppingCartIconBanner from './shoppingcart-icon-banner.svg'
 import timerIconBanner from './timer-icon-banner.svg'
 import coffeeDeliveryBannerImage from './coffee-delivery-banner-image.svg'
+import expressoTradicional from './expresso-tradicional.svg'
 
 export {
   backgroundBanner,
@@ -18,4 +19,5 @@ export {
   shoppingCartIconBanner,
   timerIconBanner,
   coffeeDeliveryBannerImage,
+  expressoTradicional,
 }

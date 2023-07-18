@@ -1,9 +1,20 @@
-import { ProductsContainer, ProductsTitle } from './styles'
+import { expressoTradicional } from '../../../assets'
+import {
+  ProductsContainerSection,
+  ProductsSectionTitle,
+  ProductContainer,
+  ProductCard,
+} from './styles'
 
 export function Products() {
   return (
-    <ProductsContainer>
-      <ProductsTitle>Nossos cafés</ProductsTitle>
-    </ProductsContainer>
+    <ProductsContainerSection>
+      <ProductsSectionTitle>Nossos cafés</ProductsSectionTitle>
+      <ProductContainer>
+        <ProductCard>
+          <img src={expressoTradicional} alt="" />
+        </ProductCard>
+      </ProductContainer>
+    </ProductsContainerSection>
   )
 }
