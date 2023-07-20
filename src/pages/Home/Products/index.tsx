@@ -1,4 +1,4 @@
-import { expressoTradicional } from '../../../assets'
+import { expressoTradicional, shoppingCartSimple } from '../../../assets'
 import {
   ProductsContainerSection,
   ProductsSectionTitle,
@@ -9,8 +9,8 @@ import {
   ProductCardCoffeeType,
   ProductCardCoffeeName,
   ProductCardCoffeeDescription,
-  ProductCardCurrency,
-  ProductCardPrice,
+  ProductFormContainer,
+  ProductAmountInput,
 } from './styles'
 
 export function Products() {
@@ -26,9 +26,15 @@ export function Products() {
             <ProductCardCoffeeDescription>
               O tradicional café feito com água quente e grãos moídos
             </ProductCardCoffeeDescription>
-            <ProductCardCurrency>
-              R$<ProductCardPrice>9,90</ProductCardPrice>
-            </ProductCardCurrency>
+            <ProductFormContainer>
+              <span>
+                R$<label htmlFor="">9,90</label>
+              </span>
+              <ProductAmountInput type="number" step={1} min={1} max={100} />
+              <button>
+                <img src={shoppingCartSimple} alt="" />
+              </button>
+            </ProductFormContainer>
           </ProductCardInfos>
         </ProductCard>
       </ProductContainer>

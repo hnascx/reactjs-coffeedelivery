@@ -89,20 +89,98 @@ export const ProductCardCoffeeDescription = styled.p`
 
   color: ${(props) => props.theme['base-label']};
 `
-export const ProductCardCurrency = styled.div`
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 130%;
 
-  color: ${(props) => props.theme['base-text']};
+export const ProductFormContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.3;
+
+    color: ${(props) => props.theme['base-text']};
+  }
+
+  label {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-left: 0.25rem;
+    margin-right: 1.5rem;
+
+    color: ${(props) => props.theme['base-text']};
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    transition: 0.1s;
+
+    background: ${(props) => props.theme['purple-dark']};
+
+    &:hover {
+      background: ${(props) => props.theme.purple};
+    }
+  }
 `
-export const ProductCardPrice = styled.span`
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  line-height: 130%;
-  margin-left: 0.25rem;
 
-  color: ${(props) => props.theme['base-text']};
+export const ProductAmountInput = styled.input`
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;  
+
+  margin-right: 0.5rem;
+
+  width: 4.5rem;
+  height: 2.375rem;
+  padding: 0.5rem;
+
+  border-radius: 6px;
+  border: none;
+
+  color: ${(props) => props.theme['base-title']};
+  background-color: ${(props) => props.theme['base-button']};
+
+  &::-webkit-inner-spin-button {
+    all: unset;
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    padding: 0px;
+    background-image: linear-gradient(
+        to top,
+        transparent 0px,
+        transparent 16px,
+        #e6e5e5 16px,
+        #e6e5e5 26px,
+        transparent 26px,
+        transparent 35px,
+        #000 36px,
+        #000 36px,
+        transparent 36px,
+        transparent 40px
+      ),
+      linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 10px,
+        #000 10px,
+        #000 10px,
+        transparent 11px,
+        transparent 21px
+      );
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor: pointer;
+  }
 `
