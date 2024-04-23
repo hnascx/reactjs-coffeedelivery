@@ -11,6 +11,7 @@ import {
   ProductCardCoffeeDescription,
   ProductFormContainer,
   ProductAmountInput,
+  ProductCardCoffeeTypesContainer,
 } from './styles'
 
 export function Products() {
@@ -21,7 +22,11 @@ export function Products() {
         <ProductCard>
           <ProductCardImage src={expressoTradicional} alt="" />
           <ProductCardInfos>
-            <ProductCardCoffeeType>Tradicional</ProductCardCoffeeType>
+            <ProductCardCoffeeTypesContainer>
+              <ProductCardCoffeeType>Tradicional</ProductCardCoffeeType>
+              <ProductCardCoffeeType>Tradicional</ProductCardCoffeeType>
+              <ProductCardCoffeeType>Tradicional</ProductCardCoffeeType>
+            </ProductCardCoffeeTypesContainer>
             <ProductCardCoffeeName>Expresso Tradicional</ProductCardCoffeeName>
             <ProductCardCoffeeDescription>
               O tradicional café feito com água quente e grãos moídos

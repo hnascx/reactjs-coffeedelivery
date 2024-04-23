@@ -23,6 +23,7 @@ export const ProductContainer = styled.div`
 export const ProductCard = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 16rem;
   height: 19.375rem;
 
@@ -47,14 +48,25 @@ export const ProductCardImage = styled.img`
 export const ProductCardInfos = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 5.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+`
+
+export const ProductCardCoffeeTypesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  gap: 0.5rem;
 `
 
 export const ProductCardCoffeeType = styled.span`
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 0.625rem;
   font-weight: 700;
@@ -138,7 +150,7 @@ export const ProductAmountInput = styled.input`
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3;
-  text-align: center;  
+  text-align: center;
 
   margin-right: 0.5rem;
 
