@@ -29,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body::-webkit-scrollbar-thumb {
     background-color: ${({ theme }) => theme.colors['brand-purple-dark']};
-    border-radius: 6px;
   }
 
   button {
