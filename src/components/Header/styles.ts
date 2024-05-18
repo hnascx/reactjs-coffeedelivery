@@ -1,46 +1,53 @@
-import { styled } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  width: 100%;
+  height: 6.5rem;
+  background-color: ${({ theme }) => theme.colors['base-background']};
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+
+export const HeaderButtonsContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  width: 70rem;
-  margin: 0 10rem;
+  gap: 0.75rem;
 `
-export const LocationAndCartContent = styled.span`
+interface HeaderButtonProps {
+  variant: 'purple' | 'yellow'
+}
+
+export const HeaderButton = styled.button<HeaderButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
+  min-width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 6px;
+  border: none;
+  padding: 0 0.5rem;
+  position: relative;
+  font-size: ${({ theme }) => theme.textSizes['text-regular-s']};
 
-  gap: 0.75rem;
+  ${({ variant, theme }) => css`
+    background: ${theme.colors[`brand-${variant}-light`]};
+    color: ${theme.colors[`brand-${variant}-dark`]};
+  `}
 
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.25rem;
-    padding: 0.5rem;
-
-    border-radius: 6px;
-    background: ${(props) => props.theme['purple-light']};
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.3;
-    font-weight: 400;
-    color: ${(props) => props.theme['purple-dark']};
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.25rem;
-    padding: 0.5rem;
-
-    border-radius: 6px;
-    background: ${(props) => props.theme['yellow-light']};
-  }
+  ${({ variant, theme }) =>
+    variant === 'purple' &&
+    css`
+      svg {
+        color: ${theme.colors[`brand-purple`]};
+      }
+    `}
 `

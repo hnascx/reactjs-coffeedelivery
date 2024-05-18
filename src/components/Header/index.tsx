@@ -1,23 +1,22 @@
-import { NavLink } from 'react-router-dom'
-
-import { HeaderContainer, LocationAndCartContent } from './styles'
-import { coffeeLogo, mapPinFill, shoppingCartFill } from '../../assets'
+import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from './styles'
+import coffeeLogo from '../../assets/coffee-logo.png'
+import { MapPin, ShoppingCart } from 'phosphor-react'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <NavLink to="/" title="Home">
+      <div className="container">
         <img src={coffeeLogo} alt="" />
-      </NavLink>
-      <LocationAndCartContent>
-        <span>
-          <img src={mapPinFill} alt="" />
-          <div>São Paulo, SP</div>
-        </span>
-        <NavLink to="/checkout" title="Checkout">
-          <img src={shoppingCartFill} alt="" />
-        </NavLink>
-      </LocationAndCartContent>
+        <HeaderButtonsContainer>
+          <HeaderButton variant="purple">
+            <MapPin size={20} weight="fill" />
+            Porto Alegre, RS
+          </HeaderButton>
+          <HeaderButton variant="yellow">
+            <ShoppingCart size={20} weight="fill" />
+          </HeaderButton>
+        </HeaderButtonsContainer>
+      </div>
     </HeaderContainer>
   )
 }
