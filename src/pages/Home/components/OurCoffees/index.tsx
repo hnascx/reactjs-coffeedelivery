@@ -1,5 +1,6 @@
 import { TitleText } from '../../../../components/Typography'
-import { OurCoffeesContainer } from './styles'
+import { CoffeeCard } from '../CoffeeCard'
+import { CoffeeList, OurCoffeesContainer } from './styles'
 
 export function OurCoffees() {
   return (
@@ -7,6 +8,9 @@ export function OurCoffees() {
       <TitleText size="l" color="subtitle">
         Nossos cafés
       </TitleText>
+      <CoffeeList>
+        <CoffeeCard />
+      </CoffeeList>
     </OurCoffeesContainer>
   )
 }
