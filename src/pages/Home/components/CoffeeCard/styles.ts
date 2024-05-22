@@ -82,7 +82,7 @@ export const AddToCartWrapper = styled.div`
     color: ${({ theme }) => theme.colors['base-card']};
     border-radius: 6px;
     margin-left: 0.3rem;
-    transition: 0.4s;
+    transition: 0.1s;
 
     &:hover {
       background: ${({ theme }) => theme.colors['brand-purple']};
