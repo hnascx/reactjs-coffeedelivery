@@ -9,10 +9,9 @@ import {
   Tags,
 } from './styles'
 
-import expressoTradicional from '../../../../assets/expresso-tradicional.png'
 import { ShoppingCart } from 'phosphor-react'
 import { QuantityInput } from '../../../../components/QuantityInput'
-import { formatmoney } from '../../../../utils/FormatMoney'
+import { formatmoney } from '../../../../utils/formatmoney'
 
 export interface Coffee {
   id: number
