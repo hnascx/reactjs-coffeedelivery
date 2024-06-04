@@ -23,14 +23,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${({ theme }) => theme.textSizes['text-regular-m']};
   }
 
-  body::-webkit-scrollbar {
-    width: 6px;               /* width of the entire scrollbar */
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.colors['brand-purple-dark']};
-  }
-
   button {
     cursor: pointer;
   }
@@ -47,5 +39,17 @@ export const GlobalStyle = createGlobalStyle`
 
   input[type="number"] {
     -moz-appearance: textfield;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.colors['base-button']};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.colors['brand-purple']};
   }
 `
